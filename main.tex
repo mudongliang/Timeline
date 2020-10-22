@@ -1,0 +1,93 @@
+\documentclass[a4paper, 10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[TS1,T1]{fontenc}
+
+\addtolength{\oddsidemargin}{-.4in}
+\addtolength{\evensidemargin}{-.4in}
+\addtolength{\textwidth}{0.9in}
+
+\addtolength{\topmargin}{-0.3in}
+%\addtolength{\textheight}{1.3in}
+
+\usepackage{array, booktabs, longtable}
+\usepackage[x11names, table]{xcolor}
+\usepackage{caption}
+\DeclareCaptionFont{blue}{\color{cyan}}
+
+\newcommand{\foo}{\color{cyan}\makebox[0pt]{\textbullet}\hskip-0.65pt\vrule width 1pt\hspace{\labelsep}}
+
+% https://tex.stackexchange.com/questions/196794/how-can-you-create-a-vertical-timeline/196808
+\begin{document}
+
+\renewcommand\arraystretch{1.4}\arrayrulecolor{cyan}
+\captionsetup{font=blue, labelfont=sc, labelsep=quad}
+\begin{longtable}{@{\,}r <{\hskip 2pt} !{\foo} >{\raggedright\arraybackslash}p{12cm}}
+\caption*{Timeline for Linux Kernel Attacks and Security Mitigation~\cite{10.1145/2103799.2103805}} \\[-1.5ex]
+\toprule
+%\addlinespace[1.5ex]
+11/8/1996 & Aleph1 published what would become the most referenced paper on
+memory corruption attacks in Phrack49~\cite{aleph1996smashing}.\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+M/D/Y & Describe the event and add some references if you can provide\\
+\bottomrule
+\end{longtable}
+
+%\newpage
+\bibliographystyle{acm}
+\bibliography{rs}
+
+\end{document} 
