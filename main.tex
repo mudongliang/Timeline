@@ -2,12 +2,12 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[TS1,T1]{fontenc}
-\usepackage[a4paper, top=50pt, bottom=50pt, left=25pt, right=25pt]{geometry}
+\usepackage[a4paper, top=50pt, bottom=50pt, left=30pt, right=30pt]{geometry}
 \usepackage{array, booktabs, longtable}
 \usepackage[x11names, table]{xcolor}
 \usepackage{caption}
 
-\newcommand{\cseq}{\color{cyan}\makebox[0pt]{\textbullet}\hskip-0.65pt\vrule width 1pt\hspace{\labelsep}}
+\newcommand{\cseq}{\color{cyan}\makebox[0pt]{\textbullet}\hskip-0.70pt\vrule width 1pt\hspace{\labelsep}}
 
 % https://tex.stackexchange.com/questions/196794/how-can-you-create-a-vertical-timeline/196808
 \begin{document}
@@ -15,6 +15,8 @@
 \renewcommand\arraystretch{1.4}\arrayrulecolor{cyan}
 %https://tex.stackexchange.com/questions/108677/how-to-use-color-in-caption-package
 \captionsetup{font={color=cyan, large, bf}, labelsep=quad}
+% \, https://tex.stackexchange.com/questions/390995/what-is-the-difference-between-tilde-and-backslash-comma-for-a-nonbreak
+% 
 \begin{longtable}{@{\,}r <{\hskip 2pt} !{\cseq} >{\raggedright\arraybackslash}p{16.5cm}}
 \caption*{Timeline for Linux Kernel Attacks and Security Mitigation~\cite{10.1145/2103799.2103805}} \\[-1.5ex]
 \toprule
